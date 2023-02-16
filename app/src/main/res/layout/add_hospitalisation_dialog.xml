@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_ambulance"
+        android:backgroundTint="#33aeb6"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add hospitalisation"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/hospitalName"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Hospital name"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/disease"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Disease"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Price"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/addHospitalisationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custombuttonxx"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Add hospitalisation"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+
+        android:textSize="16sp" />
+</LinearLayout>

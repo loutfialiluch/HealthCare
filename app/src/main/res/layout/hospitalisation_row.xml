@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="11/05/2020"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/hospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital Moulay Youssef"
+        android:drawableLeft="@drawable/ic_hospital"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Broken hand"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/healthcareplus"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="300DH"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/ic_money"/>
+</LinearLayout>

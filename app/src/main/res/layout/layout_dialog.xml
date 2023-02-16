@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_lock_outline" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Reset Password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="xywz@provider.domaine"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custombuttonxx"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Send me an Email"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+
+        android:textSize="16sp" />
+</LinearLayout>

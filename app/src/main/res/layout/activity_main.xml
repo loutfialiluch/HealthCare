@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/healthcare"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login or password are incorrect"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#33aeb6"
+            android:drawableLeft="@drawable/ic_person_outline"
+            android:ems="10"
+            android:hint="Login..."
+            android:inputType="textPersonName"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#33aeb6"
+            android:drawableLeft="@drawable/ic_lock_outline"
+            android:ems="10"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            android:textSize="22sp" />
+
+        <CheckBox
+            android:id="@+id/rememberMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Remember me"
+            android:textColor="#33aeb6"
+            android:buttonTint="#33aeb6"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custombutton"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:onClick="login"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custombutton"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="Create Account"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:onClick="createAccount"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordforgotten"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:onClick="passwordForgotten"/>
+    </LinearLayout>
+
+</LinearLayout>

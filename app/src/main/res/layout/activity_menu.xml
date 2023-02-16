@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_bottom_roundedx">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="50dp"
+            app:civ_border_width="2dp"
+            android:layout_marginRight="10dp"
+            app:civ_border_color="#FFF" />
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cin"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/customlinearlayout"
+                android:onClick="Appointments"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_today"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APPOINTMENT"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/customlinearlayout"
+                android:onClick="openMedicalFolder"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_create_new_folder"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEDICAL FOLDER"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/customlinearlayout"
+                android:onClick="searchDoctor"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_search"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEARCH"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/customlinearlayout"
+                android:layout_marginLeft="10dp"
+                android:onClick="myDoctors"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/doctor_ic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY DOCTORS"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="125dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/customlinearlayout"
+            android:onClick="profileInfo"
+            >
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_person_pin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:onClick="logOut"
+                android:background="@drawable/customlinearlayout"
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_exit_to_app"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOG OUT"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="passwordforgotten"><u>Forgot your password ?</u></string>
+
+    <string-array name="doctorSpeciality">
+        <item>Plastic surgery</item>
+        <item>Orthopedics</item>
+        <item>Cardiologist</item>
+        <item>Radiologist</item>
+        <item>Dermatologist</item>
+    </string-array>
+    <string name="title_activity_search_doctor_speciality">SearchDoctorSpecialityActivity</string>
+    <string name="tab_text_1">Doctors</string>
+    <string name="tab_text_2">Speciality</string>
+    <string name="tab_text_3">On Hold</string>
+    <string name="tab_text_4">Accepted</string>
+    <string name="tab_text_5">Declined</string>
+    <string name="tab_text_6">Hospitalisations</string>
+    <string name="tab_text_7">Consultations</string>
+    <string name="title_activity_appointments">AppointmentsActivity</string>
+    <string name="title_activity_medical_folder">MedicalFolderActivity</string>
+    <string name="title_activity_doctor_localisation">Map</string>
+    <string name="title_activity_doctor_appointments">DoctorAppointments</string>
+    <string name="title_activity_my_patient_medical_folder">MyPatientMedicalFolderActivity</string>
+</resources>

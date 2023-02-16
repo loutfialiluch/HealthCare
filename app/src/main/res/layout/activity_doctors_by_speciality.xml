@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:orientation="vertical"
+    tools:context=".DoctorsBySpecialityActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00a2b1"
+        android:padding="20dp"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/speciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/doctor_ic"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="Dermathologue"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/myDoctorsBySpeciality"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
